@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A FILM FOR LIFE AND WORKS OF RIZAL: La Pluma Del Patriota</title>
+    <link rel="icon" href="logo's/website-logo;white.png" type="image/x-icon">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="indes.html">
+                <img src="logo's/website-logo;white.png" alt="Emanuel Cruzat Logo" class="nav__logo">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="services.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+
+                <div class="nav__social">
+                    <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                        <i></i>
+                    </a>
+
+                    <a href="https://github.com/" target="_blank" class="nav__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="nav__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="overview"
+        style="background: url('pictures/overview-bg.jpg') no-repeat center center; background-size: cover;">
+        <div class="overview-text">
+            <h1><b>A FILM FOR LIFE AND WORKS OF RIZAL: <i>La Pluma Del Patriota</i></b></h1>
+            <p>
+                Working on La Pluma Del Patriota was one of the most meaningful projects I’ve been part of back in my
+                First Year - First Semester.
+                I wrote the script, so I spent a lot of time getting to know Rizal’s life and his big historical
+                moments. I was also the assistant
+                videographer, which meant I got to help bring those words to life on camera. Being involved in both
+                writing and filming gave me a
+                connection to the story and it reminded me why telling these historical stories really matters.
+            </p>
+            <p>
+                <b>Type:</b> Academic | <b>Year:</b> 2024 | <b>Role:</b> Scriptwriter, Assistant Videographer
+            </p>
+            <div class="know-more"><a href="https://www.facebook.com/61565405963108/videos/9135843036468012"
+                    target="_blank"><b>Link to the Video →</b></a></div>
+        </div>
+        <div class="overview-image">
+            <img src="pictures/video-photo/video1-1.JPG" alt="Rizal1">
+        </div>
+        <div class="overview-image">
+            <img src="pictures/video-photo/video1-3.JPG" alt="Rizal3">
+        </div>
+        <div class="back-button-inside">
+            <a href="projects.html">⬅︎ Go Back</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <script>
+        const card = document.getElementById("featureCard");
+        const toggleBtn = document.getElementById("cardToggle");
+        const icon = document.getElementById("toggleIcon");
+
+        toggleBtn.addEventListener("click", () => {
+            card.classList.toggle("show-back");
+            icon.classList.toggle("ri-add-line");
+            icon.classList.toggle("ri-close-line");
+        });
+    </script>
+
+
+</body>
+
+</html>

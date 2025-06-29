@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Information and Literacy: Informercial (Unseen Scars)</title>
+    <link rel="icon" href="logo's/website-logo;white.png" type="image/x-icon">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html">
+                <img src="logo's/website-logo;white.png" alt="Emanuel Cruzat Logo" class="nav__logo">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="projects.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="services.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+
+                <div class="nav__social">
+                    <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                        <i></i>
+                    </a>
+
+                    <a href="https://github.com/cruzatemanuel" target="_blank" class="nav__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/emanuel-cruzat-8bb340218/" target="_blank" class="nav__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="overview"
+        style="background: url('pictures/overview-bg.jpg') no-repeat center center; background-size: cover;">
+        <div class="overview-text">
+            <h1><b>Media Information and Literacy: <i>Informercial (Unseen Scars)</i></b></h1>
+            <p>
+                For our Media and Information Literacy activity back in Senior High School, we made a short film about
+                bullying. Our team wanted to show how it really feels like to be in that situation, not just what people
+                usually see.
+            </p>
+            <p>
+                <b>Type:</b> Academic   |   <b>Year:</b> 2024   |   <b>Role:</b> Lead, Writer, Editor   |   <b>Editing Software:</b> Capcut
+            </p>
+            <div class="know-more"><a href="https://drive.google.com/file/d/1ShRe25yVCt0xNtcGAlcu73K0xlUYrdhP/view?usp=sharing" target="_blank"><b>Link to the Video →</b></a></div>
+        </div>
+        <div class="overview-image">
+            <img src="pictures/video-photo/video5-1.jpeg" alt="video5-1">
+        </div>
+        <div class="overview-image">
+            <img src="pictures/video-photo/video5-2.jpeg" alt="video5-2">
+        </div>
+        <div class="overview-image">
+            <img src="pictures/video-photo/video5-3.jpeg" alt="video5-3">
+        </div>
+        <div class="back-button-inside">
+            <a href="projects.html">⬅︎ Go Back</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <script>
+        const card = document.getElementById("featureCard");
+        const toggleBtn = document.getElementById("cardToggle");
+        const icon = document.getElementById("toggleIcon");
+
+        toggleBtn.addEventListener("click", () => {
+            card.classList.toggle("show-back");
+            icon.classList.toggle("ri-add-line");
+            icon.classList.toggle("ri-close-line");
+        });
+    </script>
+
+
+</body>
+
+</html>

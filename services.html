@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="icon" href="logo's/website-logo;white.png" type="image/x-icon">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html">
+                <img src="logo's/website-logo;white.png" alt="Emanuel Cruzat Logo" class="nav__logo">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="projects.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="services.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+
+                <div class="nav__social">
+                    <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                        <i></i>
+                    </a>
+
+                    <a href="https://github.com/cruzatemanuel" target="_blank" class="nav__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/emanuel-cruzat-8bb340218/" target="_blank" class="nav__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="feature-section">
+        <h1>Services</h1>
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="logo's/finalcut-logo.png" alt="Final Cut Pro Icon">
+                <h2>Video Editing</h2>
+                <p><b>Video Editing. </b>Skilled in editing using tools like Final Cut Pro and Capcut for clean, engaging,
+                    and story-driven video content. Experience includes YouTube videos, academic content, and
+                    personal works.</p>
+            </div>
+            <div class="feature-card">
+                <img src="logo's/design-logo.png" alt="Canva Icon">
+                <h2>Design</h2>
+                <p><b>Design. </b>Creative design using Canva to deliver effective academic
+                    graphics, personal contents, and visual materials that communicate clearly and attract attention.</p>
+            </div>
+            <div class="feature-card">
+                <img src="logo's/webdev-logo.png" alt="Web Development Icon">
+                <h2>Web Development</h2>
+                <p><b>Web Development. </b>Basic to intermediate knowledge of HTML and CSS, with hands-on
+                    experience in building static websites and console-based applications. Continuously learning
+                    through personal projects.</p>
+            </div>
+            <div class="feature-card">
+                <img src="logo's/office-logo-services.png" alt="Office Icon">
+                <h2>Product Management</h2>
+                <p><b>Product Management. </b>Capable of organizing workflows, managing timelines, and handling
+                    documentation using Microsoft Office tools (Excel, Word, PowerPoint). Focused on efficient planning and
+                    documentation.</p>
+            </div>
+            <div class="feature-card">
+                <img src="logo's/research-logo.png" alt="Research Icon">
+                <h2>Research</h2>
+                <p><b>Research. </b>Strong academic and analytical research skills including data gathering, synthesis,
+                    and writing. Demonstrated through formal papers, academic tasks, and user-focused content
+                    planning.</p>
+            </div>
+
+        </div>
+        <div class="contact-me"><a href="contact.html"><b>Contact Me →</b></a></div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <script>
+        const card = document.getElementById("featureCard");
+        const toggleBtn = document.getElementById("cardToggle");
+        const icon = document.getElementById("toggleIcon");
+
+        toggleBtn.addEventListener("click", () => {
+            card.classList.toggle("show-back");
+            icon.classList.toggle("ri-add-line");
+            icon.classList.toggle("ri-close-line");
+        });
+    </script>
+
+
+</body>
+
+</html>
